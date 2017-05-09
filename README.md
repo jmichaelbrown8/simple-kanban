@@ -4,9 +4,9 @@ This is a React/Redux app that allows you to set up a simple kanban board with r
 
 ## Quick start
 
-`git clone`
-`npm install`
-`npm start`
+`git clone
+npm install
+npm start`
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
