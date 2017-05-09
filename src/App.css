@@ -1,0 +1,70 @@
+div, span {
+  box-sizing: border-box;
+}
+
+button {
+  cursor: pointer;
+  border: 0;background: transparent;
+}
+#root {
+  white-space: nowrap;
+}
+#columns {
+  white-space: nowrap;
+}
+#rows {
+}
+#catchall {
+  display: flex;
+  flex-flow: row;
+}
+.columnspacer {
+  display:inline-block;
+  width: 150px;
+}
+.row {
+  display: flex;
+}
+.cell {
+  align-self: stretch;
+  display: inline-flex;
+  flex-flow:column;
+  width: 150px;
+  min-height: 100px;
+  border: 5px solid royalblue;
+  margin-right: -5px;
+  margin-bottom: -5px;
+  font-size: 10px;
+  vertical-align: top;
+}
+.columnheader, .rowheader{
+  vertical-align: top;
+  display: inline-flex;
+  flex-flow: row;
+  width: 150px;
+}
+.columnheader {
+  margin-right: -5px;
+}
+
+.card {
+  min-width: 100px;
+  min-height: 100px;
+  width: 100px;
+  height: 100px;
+  background-color: lightyellow;
+  margin-bottom: 2px;
+  margin-right: 2px;
+  padding: 2px;
+  box-shadow: 2px 2px gray;
+  display: flex;
+}
+
+.card > input {
+  background-color: transparent;
+  max-width:80%;
+  flex: 1;
+}
+.card > button {
+  flex: 1;
+}

@@ -1,0 +1,33 @@
+{
+  "name": "simple-kanban",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-fontawesome": "^1.6.1",
+    "react-redux": "^5.0.4",
+    "react-redux-form": "^1.11.0",
+    "react-router": "^4.1.1",
+    "react-router-redux": "^4.0.8",
+    "redux": "^3.6.0",
+    "uuid": "^3.0.1"
+  },
+  "devDependencies": {
+    "deep-freeze": "0.0.1",
+    "enzyme": "^2.8.2",
+    "expect-enzyme": "^0.15.0",
+    "expect.js": "^0.3.1",
+    "react-addons-test-utils": "^15.5.1",
+    "react-scripts": "0.9.5",
+    "react-test-renderer": "^15.5.4",
+    "redux-mock-store": "^1.2.3"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
