@@ -9,7 +9,7 @@ class App extends Component {
     render() {
         const store = this.props.store;
         const board = store.getState().board;
-        
+
         const orphans = board.cards.filter((card) => {
           var inRows = board.rows.reduce((acc, val) => {
             return acc || card.row === val.id;
@@ -26,12 +26,12 @@ class App extends Component {
             <div>
               <div id="columns">
                 <span className="columnspacer"></span>
-                {board.columns.map((column, index) => <ColumnHeader key={column+index} store={store} column={column} index={index} />)}
+                {board.columns.map((column, index) => <ColumnHeader key={column.id + index} store={store} column={column} index={index} />)}
                 <button onClick={() => {store.dispatch({type: 'ADD_COLUMN', column: {name: 'New Column', id: uuid.v4()}})}}>+ Column</button>
               </div>
 
               <div id="rows">
-                {board.rows.map((row, index) => <Row key={row + index} store={store} row={row} index={index} />)}
+                {board.rows.map((row, index) => <Row key={row.id + index} store={store} row={row} index={index} />)}
               </div>
               <button onClick={() => {store.dispatch({type: 'ADD_ROW', row: {name: 'New Row', id: uuid.v4()}})}}>+ Row</button>
 

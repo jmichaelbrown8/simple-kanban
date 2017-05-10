@@ -7,6 +7,6 @@ import configureStore from '../store';
 describe('<Row />', () => {
   const store = configureStore();
   it ('renders without crashing', () => {
-    const wrapper = shallow(<Row store={store} row={{id:0}} index={0} />);
+    const wrapper = shallow(<Row store={store} row={{id:0}} />);
   });
 });
